@@ -1,0 +1,15 @@
+.Theme {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.Theme:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: red !important;
+    color: red;
+}
+html[data-bs-theme="dark"] .Theme.hover {
+    border-color: lightseagreen !important;
+    color: lightseagreen;
+}
