@@ -11,6 +11,7 @@ const UserDispatcherContext = createContext<React.Dispatch<Action>>(() => {
 });
 
 function userReducer(user: User, action: Action) {
+    console.log(action);
     if (action.type === 'sign-in') {
         return action.user;
     } else {
